@@ -1,8 +1,8 @@
-@import "_variables.css";
-@import "_main.css";
-@import "_header.css";
-@import "_hero.css";
-@import "_game.css";
-@import "_about.css";
-@import "_footer.css";
-@import "_media.css";
+@import "variables.css";
+@import "main.css";
+@import "header.css";
+@import "hero.css";
+@import "game.css";
+@import "about.css";
+@import "footer.css";
+@import "media.css";
