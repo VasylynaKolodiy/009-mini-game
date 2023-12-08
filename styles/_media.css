@@ -1,0 +1,126 @@
+/*   0-480   */
+/*   481-768   */
+/*   769-1279   */
+/*   1280+   */
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --font-size-normal: 18px;
+        --font-size-small: 14px;
+        --font-size-mini: 12px;
+        --gap-space: 20px;
+    }
+
+    .main {
+        margin-top: 60px;
+    }
+
+    .hero__inner {
+        width: 80%;
+    }
+
+    .game__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .game__card {
+        min-height: calc((1.75 * ((100vw - 200px) - 2 * var(--gap-space))) / 3);
+    }
+
+    .game__inner {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size-normal: 16px;
+        --gap-space: 16px;
+    }
+
+    .main {
+        margin-top: 56px;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .hero__inner {
+        width: 100%;
+    }
+
+    .game__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game__card {
+        min-height: calc((1.7 * ((100vw - 100px) - var(--gap-space))) / 2);
+    }
+
+    .game__name {
+        margin: 20px;
+    }
+
+    .game__overflow {
+        top: 40px;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navigation__list {
+        position: fixed;
+        top: 2px;
+        left: 15px;
+        right: 15px;
+        bottom: 2px;
+        border-radius: 20px;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 2px 20px red;
+        display: none;
+    }
+
+    .navigation__link {
+        font-size: var(--font-size-normal);
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .game__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .game__card {
+        min-height: calc(1.7 * (100vw - 40px));
+    }
+
+    .game__name {
+        font-size: 33px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .burger{
+        right: 20px;
+    }
+}
+
+
+
+

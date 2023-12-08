@@ -1,0 +1,9 @@
+.about {
+    padding: 100px 0;
+    background: black url("../images/about.png") no-repeat bottom center;
+    background-size: cover;
+}
+
+.about__title {
+    margin-bottom: 70px;
+}
